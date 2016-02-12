@@ -1,0 +1,2 @@
+# AngularSS
+sample angular store
