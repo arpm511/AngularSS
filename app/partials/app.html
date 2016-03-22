@@ -1,0 +1,22 @@
+<header>
+	<h1>AngularSS - sample store</h1>
+	<h2>an angular store built with angularJS</h2>
+</header>
+
+
+<main ng-controller="StoreController as store">
+	<ul>
+		<div class="list-group">
+			<div class="list-group-item" ng-repeat="product in store.products" ng-hide="store.product.soldOut">
+			<!-- <li ng-repeat="product in store.products | limitTo:3"> -->
+			<!-- <li ng-repeat="product in store.products | orderBy:'-price'"> -->
+				<product-title></product-title>
+				<product-panels></product-panels>
+				<button ng-show="store.product.canPurchase">Add to cart</button>
+			</div>
+		</div>
+	</ul>
+</main>
+
+
+<footer></footer>

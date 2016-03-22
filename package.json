@@ -1,0 +1,17 @@
+{
+  "name": "angularSS",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Playing with AngularJS",
+  "repository": "https://github.com/arpm511/angularss",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1",
+	"angular": "^1.4.8",
+	"angular-route": "1.5.0-build.4507+sha.1358719"
+  },
+  "scripts": {
+    "postinstall": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}
